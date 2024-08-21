@@ -1,0 +1,6 @@
+a = http_create()
+if http_handle(a, 2) == 1 then http_handle(a, 6); fi
+if http_handle(a, 5) == 1 then http_handle(a, 7); else http_handle(a, 8); http_handle(a, 9); fi
+http_handle(a, 1)
+http_handle(a, 2)
+http_destory(a)
